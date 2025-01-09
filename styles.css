@@ -1,0 +1,282 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #E5E5E5;
+}
+
+/* Container for Left and Right Sections */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left Section (Navigation buttons) */
+.left-section {
+    width: 200px;
+    background-color: #92A0AC;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-top-right-radius: 115px; /* Rounded top right corner */
+    border-bottom-right-radius: 115px; /* Rounded bottom right corner */
+}
+a {
+    color: black; /* Makes the text black */
+    text-decoration: none; /* Removes the underline */
+    font-family: 'Barlow', sans-serif; /* Apply Barlow font */
+    font-weight: 500; /* Medium weight */
+    font-style: italic; /* Italic style */
+}
+
+
+button a {
+    display: inline-block; /* Ensures proper button alignment */
+    width: 100%; /* Optional: Makes link fill the button */
+    height: 100%; /* Optional: Matches button height */
+}
+
+.left-section button {
+    background-color: #656A71;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.1); /* Inner shadow effect */
+}
+
+.left-section button.active {
+    background-color: darkslategrey;
+    color: white;
+    transform: translate(2px, 2px); /* Moves the button slightly forward */
+    box-shadow: none; /* Removes shadow when pressed */
+}
+
+.left-section button:hover {
+    background-color: #555;
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.25), inset -6px -6px 12px rgba(255, 255, 255, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Right Section (Content) */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    background-color: #E5E5E5;
+}
+
+.right-section h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.right-section h2 {
+    font-size: 24px;
+    color: #D2B48C;
+}
+
+.right-section button{
+    background-color: #D2B48C;
+    border: none;
+    border-radius: 25px;
+}
+
+.right-section blockquote {
+    font-style: italic;
+    font-size: 18px;
+    color: #016936;
+    margin-top: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* Image Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.author-image {
+    width: 150px;
+    height: 175px;
+    border-radius: 50%;
+    border: 0px solid #333;
+}
+
+.content {
+    padding: 2em;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-section {
+    max-width: 60%;
+}
+
+.about-section h2 {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+.icon-placeholder img {
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 3em;
+}
+
+.nav-btn {
+    background: linear-gradient(145deg, #d1d8e0, #a5b1c2);
+    border: none;
+    border-radius: 10px;
+    padding: 0.8em;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 3px 3px 6px #b0bec5, -3px -3px 6px #ffffff;
+}
+
+.nav-btn:hover {
+    transform: scale(1.05);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background: #6C7A89;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-btn {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: #888;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #555;
+}
+
+.close-btn {
+    font-size: 24px;
+    background: transparent;
+    border: none;
+    color: white;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    background: #F4F4F4;
+}
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+.skills-content {
+    padding: 15px;
+    background: #EFEFEF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skills-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-content li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+.skills-content strong {
+    color: #333;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+.profile-pic {
+    position: absolute; /* Positions the image relative to the page */
+    top: 10px; /* Adjust for the desired distance from the top */
+    right: 10px; /* Adjust for the desired distance from the left */
+}
+
+.profile-pic img {
+    width: 250px; /* Adjust the size of the image */
+    height: 200px;
+    border-radius: 50%; /* Makes the image circular if it's square */
+}
+.icon-placeholder {
+    position: absolute; /* Positions the image relative to the page */
+    bottom: 30px; /* Adjust for the desired distance from the top */
+    right: 20px;
+}
+
+

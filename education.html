@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <nav>
+                <a href="portifolio.html">
+                    <img src="cross.png" alt="cross picture" style="width: 30px; height: 30px;">
+                </a>
+                <button id="about-btn" onclick="setActive(this)"><a href="about.html">ABOUT</a></button></br>
+                    <button id="education-btn" onclick="setActive(this)"><a href="education.html">EDUCATION</a></button></br>
+                    <button id="skills-btn" onclick="setActive(this)"><a href="skills.html">SKILLS</a></button></br>
+                    <button id="contact-btn" onclick="setActive(this)"><a href="contact.html">CONTACT</a></button></br>
+                
+            </nav>
+        </div>
+
+    
+        <div class="right-section">
+        <!-- Profile Picture for Consistency -->
+        <div class="profile-pic">
+            <img src="pink-removebg.png" alt="Profile Picture">
+        </div>
+       
+        
+        <!-- New Education Section -->
+        <div class="education-section">
+            <h2>Education</h2>
+            <h3>Inyange Girls School of Sciences</h3>
+            <p>High School Diploma in MPC (Mathematics, Physics, Computer Science)<br>2018 – 2021</p>
+            
+            <h3>Adventist University of Central Africa (AUCA)</h3>
+            <p>Bachelor in Software Engineering<br>June 2022 – Present</p>
+            
+            <h4>Notable Projects:</h4>
+            <ul>
+                <li>Library Management System: a full-stack web application for managing library operations.</li>
+                <li>Movie Genre Classifier: a machine learning model to classify movie scripts into genres.</li>
+                <li>Bus Transport System: web application using Razor Pages in ASP.NET for managing bus schedules, ticket bookings.</li>
+                <li>Online E-Learning Platform: an interactive e-learning platform using Razor Pages in ASP.NET to facilitate online courses, quizzes, and user progress tracking.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
